@@ -17,6 +17,16 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:id="@+id/screen_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz"/>
+
         <LinearLayout
             android:id="@+id/top_container"
             android:layout_width="match_parent"
@@ -24,7 +34,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/screen_title_tv">
 
             <TextView
                 android:id="@+id/tv_question"

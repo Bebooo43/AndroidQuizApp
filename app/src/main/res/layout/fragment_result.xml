@@ -18,6 +18,16 @@
         android:padding="16dp">
 
         <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:id="@+id/screen_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"/>
+
+        <TextView
             android:id="@+id/tv_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,7 +35,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="@{viewModel.resultText}"
             android:textSize="18sp"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/screen_title_tv"/>
 
         <LinearLayout
             android:id="@+id/bottom_container"
